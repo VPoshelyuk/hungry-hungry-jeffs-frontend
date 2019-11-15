@@ -186,11 +186,12 @@ function multiLoop(game_mode = "2",jeff_left_pic, jeff_right_pic, ballSprite, nu
             h4.innerText = `Green won!`
           }else{
             img.src = "images/tie-game.jpg"
+            img.dataset.loss_id = "loss"
+            info.appendChild(img)
             h4.innerText = `It's a tie!`
           }
             h4.dataset.loss_id = "loss"
             h4.id = "win_lose"
-            info.appendChild(img)
             info.appendChild(h4)
           return
         }
